@@ -19,6 +19,7 @@ function NavigationBar() {
       <Nav.Link as={Link} to="/poed">{t('navbar.shops-button')}</Nav.Link>
       <Nav.Link as={Link} to="/meist">{t('navbar.about-button')}</Nav.Link>
       <Nav.Link as={Link} to="/ostukorv">{t('navbar.cart-button')}</Nav.Link>
+      <Nav.Link as={Link} to="/kasutajad">{t('Kasutajad')}</Nav.Link>
       </Nav>
   </Container>
   <img className="lang" onClick={() => changeWebsiteLanguage('ee')} src={require('../assets/estonia.png')} alt="" />
