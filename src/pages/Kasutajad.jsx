@@ -17,6 +17,7 @@ function Kasutajad() {
 
   return ( 
   <div>
+      <div>{kasutajad.length}</div>
       <div>{kasutajad.map(kasutaja =>
       <div>
         <div>{kasutaja.id}</div>
