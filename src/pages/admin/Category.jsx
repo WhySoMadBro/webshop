@@ -1,11 +1,17 @@
+// localStorage/sessionStorage - igaühe arvutis (ainult ostukorvi jaoks, keele jaoks)
+// fail - lugemiseks
+// andmebaas - T   MongoDb / Firebase andmebaas
 import { useRef, useState } from "react";
-import categoriesFromFile from "../../categories.json"
+import categoriesFromFile from "../../categories.json";
 
 function Category() {
   const [categories, setCategories] = useState(categoriesFromFile);
   const categoryRef = useRef();
+                                                              //                      !!!!!!!!!!!!!!!
+  // const categoriesUrl = "https://react-0722-default-rtdb.europe-west1.firebasedatabase.app/categories.json";
 
-  // event - siia sisse lähevad kõik sündmusega seotud omadused
+
+                // event - siia sisse lähevad kõik sündmusega seotud omadused
   const addCategory = (e) => {
     if (e.key === "Enter" || e.type === "click") {
       categoriesFromFile.push({name: categoryRef.current.value}); // andmebaasi lisamise päring
